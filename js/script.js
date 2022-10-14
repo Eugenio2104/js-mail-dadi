@@ -23,7 +23,7 @@ let okMail = false
 let index;
 
 
-const userAdd = prompt(`inserisci la tua mail`)
+const insertMail = prompt(`inserisci la tua mail`)
 console.log(mail);
 
 
