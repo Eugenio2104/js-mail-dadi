@@ -19,30 +19,24 @@ const mail =[
   `eugenio.22@hotmail.it`,
   `eugenio.28@hotmail.it`,
 ]
-let okMail = false
+let okMail = false;
 let index;
-
+const output = document.querySelector(`output`)
 
 const insertMail = prompt(`inserisci la tua mail`)
 console.log(mail);
 
 
-for(let i = 0; i < mail.length; i++ ){
-  const li = document.createElement(`li`);
-  li.innerHTML = mail[i];
-  lista.append(li);
+for(let i = 0; i < mail.length; i++){
 
-  if(mail[i] === "eugenio.21@hotmail.it"){
-    index = i;
-    okMail = true
-    console.log(okMail);
+  if(mail[i] === insertMail){
+    okMail = true;
   }else{
-    okMail = false
   }
 }
 
 if (okMail){
-  output.innerHTML = `Mail Valida ${index}`;
+  output.innerHTML = `Mail Valida`;
 }else{
   output.innerHTML = "Mail non valida";
 }
