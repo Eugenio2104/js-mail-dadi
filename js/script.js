@@ -27,7 +27,7 @@ const userAdd = prompt(`inserisci la tua mail`)
 console.log(mail);
 
 
-for(let i = 0; i < mail.length; i++){
+for(let i = 0; i < mail.length; i++ ){
   const li = document.createElement(`li`);
   li.innerHTML = mail[i];
   lista.append(li);
@@ -42,7 +42,7 @@ for(let i = 0; i < mail.length; i++){
 }
 
 if (okMail){
-  output.innerHTML = `Mail Valida` ;
+  output.innerHTML = `Mail Valida ${index}`;
 }else{
   output.innerHTML = "Mail non valida";
 }
